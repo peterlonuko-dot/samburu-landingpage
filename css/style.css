@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 3px solid #d32f2f;
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: url('../images/samburu-hero.jpg') no-repeat center center/cover;
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn.primary {
+  background-color: #d32f2f;
+}
+
+.btn.secondary {
+  background-color: #1976d2;
+}
+
+/* Leadership */
+.leadership {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.leaders {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.leader-card {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.leader-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Services */
+.services {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-card {
+  background: #eaeaea;
+  flex: 1 1 45%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Projects */
+.projects {
+  background-color: #f3f3f3;
+  padding: 60px 0;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap
+}
